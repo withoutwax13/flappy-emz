@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.Game {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 5px solid #000;
+  border-radius: 10px;
+  margin: 20px auto;
+  overflow: hidden;
+  background-color: #87ceeb; /* sky blue */
+}
+
+.Bird {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  left: 100px;
+  border-radius: 50%; /* make the bird round */
+  box-shadow: 0 0 10px rgba(0,0,0,0.25); /* add a little shadow for depth */
+}
+
+.Pipe {
+  width: 100px;
+  background-color: #008000; /* darker green */
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25); /* add a little shadow for depth */
+}
+
+.Score {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2em;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* make the score easier to read */
+}
